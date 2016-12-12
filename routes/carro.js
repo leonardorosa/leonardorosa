@@ -2,43 +2,43 @@ var express = require('express');
 var router = express.Router();
 
 var mongoose = require('mongoose');
-var Aluno = require('../models/Aluno.js');
+var Carro = require('../models/Usuario.js');
 
-/* GET /aluno Listagem de usuários. */
+/* GET /carro Listagem de carros. */
 router.get('/', function(req, res, next) {
-  Aluno.find(function (err, aluno) {
+  Carro.find(function (err, carro) {
     if (err) return next(err);
-    res.json(aluno);
+    res.json(carro);
   });
 });
 
-/* POST /aluno Cadastro de usuário */
+/* POST /carro Cadastro de carro */
 router.post('/', function(req, res, next) {
-  Aluno.create(req.body, function (err, post) {
+  Carro.create(req.body, function (err, post) {
     if (err) return next(err);
     res.json(post);
   });
 });
 
-/* GET /aluno/id  Lista filtrada por um usuário*/
+/* GET /carro/id  Lista filtrada por um carro*/
 router.get('/:id', function(req, res, next) {
-  Aluno.findById(req.params.id, function (err, post) {
+  Carro.findById(req.params.id, function (err, post) {
     if (err) return next(err);
     res.json(post);
   });
 });
 
-/* PUT /aluno/:id Salva a edição de usuário */
+/* PUT /carro/:id Salva a edição de carro */
 router.put('/:id', function(req, res, next) {
-  Aluno.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
+  Carro.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
     if (err) return next(err);
     res.json(post);
   });
 });
 
-/* DELETE /aluno/:id Deletando o usuário a partir do id */
+/* DELETE /carro/:id Deletando o carro a partir do id */
 router.delete('/:id', function(req, res, next) {
-  Aluno.findByIdAndRemove(req.params.id, req.body, function (err, post) {
+  Carro.findByIdAndRemove(req.params.id, req.body, function (err, post) {
     if (err) return next(err);
     res.json(post);
   });
