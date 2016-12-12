@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var mongoose = require('mongoose');
-var Carro = require('../models/Usuario.js');
+var Carro = require('../models/Carro.js');
 
 /* GET /carro Listagem de carros. */
 router.get('/', function(req, res, next) {
