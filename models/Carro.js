@@ -1,9 +1,13 @@
 var mongoose = require('mongoose');
 
 var CarroSchema = new mongoose.Schema({
+  marca: String,  
   modelo: String,
   ano: Number,
-  cor: String
+  cor: String,
+  placa: String,
+  cambio: String
+  
 
 });
 
