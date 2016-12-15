@@ -5,12 +5,12 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var usuario = require('./routes/usuario');
+/*var usuario = require('./routes/usuario');
 var perfil = require('./routes/perfil');
 var aluno = require('./routes/aluno');
 var carro = require('./routes/carro');
 var crush = require('./routes/crush');
-var imovel = require('./routes/imovel');
+var imovel = require('./routes/imovel');*/
 
 var mongoose = require('mongoose');
 
@@ -56,11 +56,11 @@ app.use(function(req, res, next) {
 });
 
 app.use('/', routes);
-app.use('/usuario', usuario);
+/*app.use('/usuario', usuario);
 app.use('/perfil', perfil);
 app.use('/carro', carro);
 app.use('/crush', crush);
-app.use('/imovel', imovel);
+app.use('/imovel', imovel);*/
 
 
 
