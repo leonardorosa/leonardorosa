@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var CarroSchema = new mongoose.Schema({
+var CrushSchema = new mongoose.Schema({
   _id: String,  
   nome: String,
   idade: Number,

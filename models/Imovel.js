@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var CarroSchema = new mongoose.Schema({
+var ImovelSchema = new mongoose.Schema({
   _id: String,  
   tipo: String,
   endereco: String,
@@ -10,4 +10,4 @@ var CarroSchema = new mongoose.Schema({
 
 });
 
-module.exports = mongoose.model('Crush', CrushSchema);
+module.exports = mongoose.model('Imovel', ImovelSchema);
