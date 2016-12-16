@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-var mongoose = require('mongoose');
 var Crush = require('../models/Crush.js');
 
 /* GET /crush Listagem de crushes. */
