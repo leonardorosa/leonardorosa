@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-var mongoose = require('mongoose');
 var Imovel = require('../models/Imovel.js');
 
 /* GET /imovel Listagem de imoveis. */

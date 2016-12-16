@@ -60,7 +60,7 @@ app.use('/', routes);
 app.use('/perfil', perfil);
 app.use('/carro', carro);*/
 app.use('/crush', crush);
-//app.use('/imovel', imovel);
+app.use('/imovel', imovel);
 
 
 
