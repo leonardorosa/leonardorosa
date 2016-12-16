@@ -7,15 +7,15 @@ var router = express.Router();
 var Imovel = require('../models/Imovel.js');
 
 router.post('/', function (req, res, next) {
-    Usuario.findOne({login: req.body.username, senha: req.body.password}, 'login')
-            .exec(function (err, usuario) {
+    Imovel.findOne({login: req.body.username, senha: req.body.password}, 'login')
+            .exec(function (err, imovel) {
                 if (err)
                     res.send(err);
-                if (usuario !== null) {
-                    var token = jwt.sign(usuario, secretKey, {
+                if (imovel !== null) {
+                    var token = jwt.sign(imovel, secretKey, {
                         expiresIn: "1 day"
                     });
-                    res.json({usuario: usuario, token: token});
+                    res.json({imovel: imovel, token: token});
                 } else {
                     res.status(400).send('Login/Senha incorretos');
                 }
