@@ -58,8 +58,8 @@ app.use(function(req, res, next) {
 app.use('/', routes);
 /*app.use('/usuario', usuario);
 app.use('/perfil', perfil);
-app.use('/carro', carro);*/
-app.use('/crush', crush);
+app.use('/carro', carro);
+app.use('/crush', crush);*/
 app.use('/imovel', imovel);
 
 
