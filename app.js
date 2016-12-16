@@ -11,6 +11,7 @@ var aluno = require('./routes/aluno');
 var carro = require('./routes/carro');
 var crush = require('./routes/crush');*/
 var imovel = require('./routes/imovel');
+//var login = require('./routes/login');
 
 var mongoose = require('mongoose');
 
@@ -61,6 +62,7 @@ app.use('/perfil', perfil);
 app.use('/carro', carro);
 app.use('/crush', crush);*/
 app.use('/imovel', imovel);
+//app.use('/login', login);
 
 
 
