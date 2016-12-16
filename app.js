@@ -8,8 +8,8 @@ var routes = require('./routes/index');
 /*var usuario = require('./routes/usuario');
 var perfil = require('./routes/perfil');
 var aluno = require('./routes/aluno');
-var carro = require('./routes/carro');*/
-var crush = require('./routes/crush');
+var carro = require('./routes/carro');
+var crush = require('./routes/crush');*/
 var imovel = require('./routes/imovel');
 
 var mongoose = require('mongoose');
