@@ -5,7 +5,9 @@ var ImovelSchema = new mongoose.Schema({
   tipo: String,
   endereco: String,
   tamanho: Number,
-  valor: Number
+  valor: Number,
+  login: String,
+  senha: String
   
 
 });
